@@ -1,0 +1,53 @@
+# Top-most EditorConfig file
+root = true
+
+# =========================
+# Default settings for all files
+# =========================
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# =========================
+# Java files (Spring Boot)
+# =========================
+[*.java]
+indent_style = space
+indent_size = 4
+
+# =========================
+# JavaScript / TypeScript
+# =========================
+[*.{js,jsx,ts,tsx}]
+indent_size = 2
+
+# =========================
+# JSON / YAML configuration
+# =========================
+[*.{json,yml,yaml}]
+indent_size = 2
+
+# Keep package-lock and generated JSON strict
+[package-lock.json]
+indent_style = space
+indent_size = 2
+
+# =========================
+# Markdown files
+# =========================
+[*.md]
+trim_trailing_whitespace = false
+
+# =========================
+# XML (Spring configs, Maven, etc.)
+# =========================
+[*.xml]
+indent_size = 2
+
+# Maven specific
+[pom.xml]
+indent_size = 2
